@@ -1,0 +1,152 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:575: checking host system type
+configure:596: checking target system type
+configure:614: checking build system type
+configure:648: checking for a BSD compatible install
+configure:701: checking whether build environment is sane
+configure:758: checking whether make sets ${MAKE}
+configure:804: checking for working aclocal
+configure:817: checking for working autoconf
+configure:830: checking for working automake
+configure:843: checking for working autoheader
+configure:856: checking for working makeinfo
+configure:873: checking whether to enable maintainer-specific portions of Makefiles
+configure:897: checking if building for some Win32 platform
+configure:917: checking for gawk
+configure:949: checking for gcc
+configure:1062: checking whether the C compiler (gcc  ) works
+configure:1078: gcc -o conftest    conftest.c  1>&5
+configure:1104: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:1109: checking whether we are using GNU C
+configure:1118: gcc -E conftest.c
+configure:1137: checking whether gcc accepts -g
+configure:1180: checking for a BSD compatible install
+configure:1233: checking whether ln -s works
+configure:1254: checking whether make sets ${MAKE}
+configure:1283: checking for ranlib
+configure:1315: checking for bison
+configure:1346: checking how to run the C preprocessor
+configure:1367: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1431: checking for flex
+configure:1464: checking for flex
+configure:1498: checking for yywrap in -lfl
+configure:1517: gcc -o conftest -g -O2   conftest.c -lfl   1>&5
+configure:1540: checking lex output file root
+configure:1561: checking whether yytext is a pointer
+configure:1580: gcc -o conftest -g -O2   conftest.c  -lfl 1>&5
+configure:1603: checking for Cygwin environment
+configure:1619: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:1615:8: error: '__CYGWIN32__' undeclared (first use in this function)
+configure:1615:8: note: each undeclared identifier is reported only once for each function it appears in
+configure: failed program was:
+#line 1608 "configure"
+#include "confdefs.h"
+
+int main() {
+
+#ifndef __CYGWIN__
+#define __CYGWIN__ __CYGWIN32__
+#endif
+return __CYGWIN__;
+; return 0; }
+configure:1636: checking for mingw32 environment
+configure:1648: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:1644:8: error: '__MINGW32__' undeclared (first use in this function)
+configure:1644:8: note: each undeclared identifier is reported only once for each function it appears in
+configure: failed program was:
+#line 1641 "configure"
+#include "confdefs.h"
+
+int main() {
+return __MINGW32__;
+; return 0; }
+configure:1667: checking for executable suffix
+configure:1677: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1698: checking for object suffix
+configure:1704: gcc -c -g -O2  conftest.c 1>&5
+configure:1723: checking for ANSI C header files
+configure:1736: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1803: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1798:67: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure:1830: checking for string.h
+configure:1840: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1830: checking for strings.h
+configure:1840: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1830: checking for stdlib.h
+configure:1840: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1830: checking for stdarg.h
+configure:1840: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1830: checking for varargs.h
+configure:1840: gcc -E  conftest.c >/dev/null 2>conftest.out
+In file included from configure:1836:0:
+/usr/lib/gcc/i686-linux-gnu/4.6/include/varargs.h:4:2: error: #error "GCC no longer implements <varargs.h>."
+/usr/lib/gcc/i686-linux-gnu/4.6/include/varargs.h:5:2: error: #error "Revise your code to use <stdarg.h>."
+configure: failed program was:
+#line 1835 "configure"
+#include "confdefs.h"
+#include <varargs.h>
+configure:1870: checking for unistd.h
+configure:1880: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1870: checking for sys/types.h
+configure:1880: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1870: checking for sys/stat.h
+configure:1880: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1908: checking for working const
+configure:1962: gcc -c -g -O2  conftest.c 1>&5
+configure:1990: checking for vfprintf
+configure:2018: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:2002:6: warning: conflicting types for built-in function 'vfprintf' [enabled by default]
+configure:1990: checking for strchr
+configure:2018: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:2002:6: warning: conflicting types for built-in function 'strchr' [enabled by default]
+configure:1990: checking for qsort
+configure:2018: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:1990: checking for vsnprintf
+configure:2018: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:2002:6: warning: conflicting types for built-in function 'vsnprintf' [enabled by default]
+configure:1990: checking for _vsnprintf
+configure:2018: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+/tmp/cckt9A16.o: In function `main':
+/home/jeff/dev/dev_apps/sand/qca_designer/lib/treecc-0.3.4/configure:2012: undefined reference to `_vsnprintf'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 1995 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char _vsnprintf(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char _vsnprintf();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub__vsnprintf) || defined (__stub____vsnprintf)
+choke me
+#else
+_vsnprintf();
+#endif
+
+; return 0; }
+configure:1990: checking for vsprintf
+configure:2018: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:2002:6: warning: conflicting types for built-in function 'vsprintf' [enabled by default]
+configure:2045: checking for memcmp
+configure:2073: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:2057:6: warning: conflicting types for built-in function 'memcmp' [enabled by default]
+configure:2045: checking for memcpy
+configure:2073: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:2057:6: warning: conflicting types for built-in function 'memcpy' [enabled by default]
+configure:2045: checking for access
+configure:2073: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5
+configure:2045: checking for stat
+configure:2073: gcc -o conftest -g -O2 -Wall   conftest.c  1>&5

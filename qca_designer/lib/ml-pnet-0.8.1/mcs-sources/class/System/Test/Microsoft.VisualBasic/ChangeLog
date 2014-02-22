@@ -1,0 +1,74 @@
+2005-06-12  Gert Driesen <drieseng@users.sourceforge.net>
+
+	* VBCodeProviderTest.cs: Marked tests NotWorking on 2.0 profile
+	as we don't yet have an mbas for that profile.
+
+2005-06-12  Gert Driesen <drieseng@users.sourceforge.net>
+
+	* VBCodeProviderTest.cs: fixed line endings
+
+2005-06-10  Gert Driesen <drieseng@users.sourceforge.net>
+
+	* VBCodeProviderTest.cs: improve reporting of test failures as a
+	result of compile errors. Added a ICodeGenerator.Supports tests
+	for .NET 2.0.
+
+2005-06-10  Gert Driesen <drieseng@users.sourceforge.net>
+
+	* VBCodeProviderTest.cs: removed unnecessary test, added test
+	for ICodeGenerator.Supports.
+
+2005-06-09  Gert Driesen <drieseng@users.sourceforge.net>
+
+	* VBCodeProviderTest.cs: added batch of tests that check whether
+	temporary files are cleaned up, compile multiple sources/compile units
+	and files. Use separate AppDomain for tests that actually loaded
+	the compiled assembly, to ensure no test output is left on the system.
+
+2005-06-05  Gert Driesen <drieseng@users.sourceforge.net>
+
+	* VBCodeProviderTest.cs: moved to using NUnit 2.x Assert, improve
+	failure output of CreateCompiler test.
+
+2005-05-30  Gert Driesen <drieseng@users.sourceforge.net>
+
+	* VBCodeProviderTest.cs: Added tests for GenerateInMemory
+	compiler parameter.
+
+2004-12-03  Raja R Harinath  <rharinath@novell.com>
+
+	* VBCodeProviderTest.cs: Change namespace to
+	MonoTests.Microsoft.VisualBasic.
+
+2004-11-19  Raja R Harinath  <rharinath@novell.com>
+
+	* VBCodeProviderTest.cs (CreateCompiler): Be more verbose about
+	error exit.
+
+2004-03-08  Nick Drochak  <ndrochak@ieee.org>
+
+	* VBCodeProviderTest.cs: On windows, do not use mono to execute 
+	assembly. Actually, this should be if running on MS's CLR, but
+	for now it will do.
+
+2004-02-04  Jackson Harper <jackson@ximian.com>
+
+	* VBCodeProviderTest.cs: Use mono to execute assembly.
+	
+2003-12-11  Nick Drochak  <ndrochak@ieee.org>
+
+	* VBCodeProviderTest.cs: Console.WriteLine's don't really belong in 
+	unit tests.
+
+2003-12-11  Nick Drochak  <ndrochak@ieee.org>
+
+	* VBCodeProviderTest.cs: Fixed subtle namespace issues preventing
+	build with csc.
+
+2003-12-10  Jochen Wezel  <jwezel@compumaster.de>
+
+        * VBCodeProviderTest.cs: moved into proper subdir
+	                         and also extended for additional testings
+
+	* CodeGenerator*.cs: C# units copied and changed for VB use
+

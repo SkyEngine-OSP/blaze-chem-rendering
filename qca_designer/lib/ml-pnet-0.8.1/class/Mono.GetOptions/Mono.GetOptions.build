@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<project name="Mono.GetOptions" default="all">
+	<target name="all">
+		<compile target="library"
+				 output="Mono.GetOptions.dll"
+				 debug="${debug.flag}"
+				 unsafe="true"
+				 install="true"
+				 installasdefault="true">
+
+			<sources basedir="${mono.sources}/class/Mono.GetOptions">
+				<includes name="**/*.cs"/> 
+				<excludes name="GetOptTest/**"/>
+			</sources>
+
+			<references>
+				<file name="System.dll"/>
+			</references>
+		</compile>
+	</target>
+</project>

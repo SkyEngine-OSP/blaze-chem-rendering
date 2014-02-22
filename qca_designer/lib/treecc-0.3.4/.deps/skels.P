@@ -1,0 +1,3 @@
+skels.o: skels.c config.h
+skels.c :
+config.h :

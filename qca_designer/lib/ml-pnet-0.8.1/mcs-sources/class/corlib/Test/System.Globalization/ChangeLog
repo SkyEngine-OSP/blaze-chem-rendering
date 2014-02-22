@@ -1,0 +1,24 @@
+2005-06-07 Gonzalo Paniagua Javier <gonzalo@ximian.com>
+
+	* CultureInfoTest.cs: added test that tries setting the culture to a
+	neutral culture that is not the InvariantCulture.
+
+2005-05-06 Gonzalo Paniagua Javier <gonzalo@ximian.com>
+
+	* CultureInfoTest.cs: added new test.
+
+2005-04-05  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* TextInfoTest.cs : added further ToTitleCase() tests.
+
+2004-10-27  Ben Maurer  <bmaurer@ximian.com>
+
+	* TextInfoTest.cs: Fix up migster's type
+
+2003-12-19  Dick Porter  <dick@ximian.com>
+
+	* CompareInfoTest.cs: Added some Compare tests
+
+2002-12-21  Nick Drochak <ndrochak@gol.com>
+
+	* all: make tests build and run under nunit2

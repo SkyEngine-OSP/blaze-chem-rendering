@@ -1,0 +1,38 @@
+2005-06-07  Ankit Jain <ankit@corewars.org>
+
+	* DictionaryTest.cs (KeyValueEnumeratorTest): Added new test.
+	
+2005-05-19  Raja R Harinath  <rharinath@novell.com>
+
+	* ListTest.cs (TestGetRange): Add missing ';'.  Actually compare
+	the length of the list.
+
+2005-05-18  Miguel de Icaza  <miguel@novell.com>
+
+	* ListTest.cs: Added.
+
+2005-05-13  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* QueueTest.cs, StackTest.cs: They are now in System.dll
+
+2005-05-05  Raja R Harinath  <rharinath@novell.com>
+
+	* DictionaryTest.cs (MyTest.GetHashCode): Add to silence a
+	compiler warning.
+
+2005-04-04  Raja R Harinath  <rharinath@novell.com>
+
+	* DictionaryTest.cs: Update.
+
+2005-04-02  Ben Maurer  <bmaurer@ximian.com>
+
+	* DictionaryTest.cs: new test.
+
+2005-01-29  Ben Maurer  <bmaurer@ximian.com>
+
+	* QueueTest.cs: new Test.
+
+2004-12-27  Ben Maurer  <bmaurer@ximian.com>
+
+	* StackTest.cs: new Test.
+

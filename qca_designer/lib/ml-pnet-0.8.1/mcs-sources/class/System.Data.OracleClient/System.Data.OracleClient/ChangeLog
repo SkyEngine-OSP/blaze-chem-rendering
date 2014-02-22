@@ -1,0 +1,31 @@
+2005-04-06  Daniel Morgan <danielmorgan@verizon.net>
+
+	* OracleParameter.cs: implement IClonable.Clone() 
+	patch from eto@shaw.ca (Curtis)
+
+2005-02-21  Sureshkumar T  <tsureshkumar@novell.com>
+
+	* OracleCommand.cs: set behavior for execute reader.
+	fixes bug #72607.
+
+2005-02-15  Sureshkumar T  <tsureshkumar@novell.com>
+
+	* OracleDataReader.cs : GetBytes: return the length of the data if
+	output buffer is null. if not, copy the values to buffer and
+	return the bytes actually read.
+
+	fixes bug #72472.
+
+2004-12-19  Daniel Morgan <danielmorgan@verizon.net>
+
+	* OracleCommand.cs: ExecuteReader needs to be able 
+	to handle non queries too
+
+2004-09-14  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* ChangeLog: New.
+	* OraclePermission.cs: Adapted to work for both Fx 1.1 and 2.0. Fx 1.1
+	version isn't complete (as anyway it requires FullTrust on MS 
+	implementation) but DO NOT throw exceptions (for the security engine).
+	* OraclePermissionAttribute.cs: Implemented CreatePermission. Adapted
+	to work for both Fx 1.1 and 2.0.
